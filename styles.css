@@ -1,0 +1,575 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #040c16; 
+    color: white; 
+    font-family: 'DM Sans', sans-serif;
+}
+
+body a:link{
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);  /* Transparent background */
+    position: absolute; /* Position header absolutely */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+    border-bottom: 2px solid white;
+}
+
+nav {
+    display: flex; /* Use Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between logo and nav items */
+
+    margin: 0 auto; /* Center nav horizontally */
+    padding: 0px 0px; /* Horizontal padding */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange list items horizontally */
+    flex-grow: 1; /* Allow the list to take up remaining space */
+    justify-content: center; /* Center navigation items */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+h1{
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 55px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h3{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 40px; 
+}
+
+h4{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.large{
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-button,
+.bookNowButton {
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Align with other elements */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+.bookNowButton {
+    border: 2px solid white; /* White border */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    margin-bottom: 10px;
+}
+
+.bookNowButton:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text color on hover */
+}
+
+.header-button {
+    border: none;
+    padding: 25px 35px;
+    font-size: 25px;
+}
+
+.header-button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text color on hover */
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: block; /* Keep it block to allow height transition */
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:visited {   
+    color: black !important;
+}
+
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    max-height: 400px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-cover {
+    flex: 1; 
+    text-align: center; 
+    transition: transform 0.3s ease-in-out; 
+    margin-bottom: 60px;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.image-cover.image1_1{
+    background-image: url("Images/Photo1.1.png");
+}
+
+.image-cover.image1_2{
+    background-image: url("Images/Photo1.2.jpg");
+}
+
+.image-cover.image1_3{
+    background-image: url("Images/Photo1.3.jpg");
+}
+
+.image-cover.image1_4{
+    background-image: url("Images/Photo1.4.jpg");
+}
+
+.image-cover.image1_5{
+    background-image: url("Images/Photo1.5.jpg");
+}
+
+.image-cover.image1_6{
+    background-image: url("Images/Photo1.6.jpg");
+}
+
+.image-cover.image1_7{
+    background-image: url("Images/Photo1.7.jpg");
+}
+
+.image-cover.image1_8{
+    background-image: url("Images/Photo1.8.jpg");
+}
+
+.image-cover.image1_1,
+.image-cover.image1_2,
+.image-cover.image1_3,
+.image-cover.image1_4,
+.image-cover.image1_5,
+.image-cover.image1_6,
+.image-cover.image1_7,
+.image-cover.image1_8{
+    height: 800px;
+}
+
+
+
+
+.image-cover.home-page-grid:hover {
+    transform: scale(1.05);
+}
+
+.image-cover.home-page-grid.image2_1{
+    background-image: url("Images/Photo2.1.jpg");
+}
+
+.image-cover.home-page-grid.image2_2{
+    background-image: url("Images/Photo2.2.png");
+}
+
+.image-cover.home-page-grid.image2_3{
+    background-image: url("Images/Photo2.3.png");
+}
+
+.image-cover.home-page-grid.image2_1,
+.image-cover.home-page-grid.image2_2,
+.image-cover.home-page-grid.image2_3 {
+    height:800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+    display: inline-block; /* Use Flexbox for logo alignment */
+    align-items: center; /* Center the logo image vertically */
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.logo-img {
+    height: 70px; /* Adjust the height of the image */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the image round */
+}
+
+.pic-grid-1x3 {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between items */
+    align-items: center; /* Aligns items vertically within the row */
+    gap: 10px; /* Adds space between the divs, adjust as needed */
+    color: white;
+}
+
+.pic-grid-1x3 a:visited {   
+    color: white; /* Set the color for visited links */
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #000000; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for the footer */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 0px;
+}
+
+.footer-section h2 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    color: #919191; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .home-page-intro{
+        padding-top: 130px;
+    }
+    
+    
+
+
+
+    h1{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 125px;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    h2{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 30px; 
+    }
+    
+    h3{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20px; 
+    }
+
+
+
+    .image-cover.home-page-grid.image2_1{
+        background-image: url("Images/Photo2.1.jpg");
+    }
+    
+    .image-cover.home-page-grid.image2_2{
+        background-image: url("Images/Photo2.2.png");
+    }
+    
+    
+    .image-cover.home-page-grid.image2_3{
+        background-image: url("Images/Photo2.3.png");
+    }
+
+    .image-cover.home-page-grid.image2_1,
+    .image-cover.home-page-grid.image2_2,
+    .image-cover.home-page-grid.image2_3 {
+        width: 600px;
+    }   
+
+
+
+
+
+    .logo-img{
+        height: 50px;
+    }
+
+
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .pic-grid-1x3 {
+        flex-direction: column; /* Change layout to vertical */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .pic-grid-1x3 div {
+        margin-bottom: 10px; /* Space between items */
+    }
+}
+    
+@media (min-width: 1000px) {
+
+    .mobile-only {
+        display: none;
+    }
+    
+    .desktop-only {
+        display: block;
+    }
+}

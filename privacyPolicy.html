@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div class="desktop-only">
+        <div class="image-cover image1_4">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="Images/Icon.jpg" alt="Home" class="logo-img">
+                </a>
+                <ul>
+                    <li><a href="index.html"><button type="button" class="header-button">Home</button></a></li>
+                    <li><a href="about.html"><button type="button" class="header-button">About</button></a></li>
+                    <li><a href="contact.html"><button type="button" class="header-button">Contact</button></a></li>
+                    <li><a href="bookings.html"><button type="button" class="header-button">Bookings</button></a></li>
+                    <li><a href="gallery.html"><button type="button" class="header-button">Gallery</button></a></li>
+                    <li><a href="privacyPolicy.html"><button type="button" class="header-button">Privacy</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Privacy Policy</h1>
+        <h2>About Your Data</h2>
+        <a href="bookings.html">
+        </a>
+    </div>
+    </div>
+
+
+    <div class="mobile-only">
+        <div class="image-cover image1_4">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="Images/Icon.jpg" class="logo-img">
+                </a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="bookings.html">Bookings</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="privacyPolicy.html">Privacy</a>
+                    </div>
+                </div>
+                  
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        var dropdown = document.getElementById("myDropdown");
+                        dropdown.classList.toggle("show");
+                        document.querySelector(".dropbtn").classList.toggle("active");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                        if (!event.target.closest('.dropdown')) {  // Check if the click is outside the dropdown
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                            // Also remove the active state from the button
+                            document.querySelector(".dropbtn").classList.remove("active");
+                        }
+                    }
+
+                </script>
+            </nav>
+        </header>
+        <h1>Privacy Policy</h1>
+        <h2>About Your Data</h2>
+        </div>
+    </div>
+        
+
+
+
+    <div id="privacy-section">
+        <style>
+            #privacy-section h2{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        </style>
+    <h2>Information You Provide</h2>
+    <p>You do not provide any information to this site.</p>
+
+    <h2>Information Automatically Collected</h2>
+    <p>This site does not collect any information about you.</p>
+
+    <h2>Changes to this Policy</h2>
+    <p>This privacy policy may be changed at any time without notice. Your use of the website confirms your acknowledgement and consent of such changes.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h4>Find Me On</h4>
+                <div>
+                    <a href="https://www.instagram.com/gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gaurav-ojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/y35he0wxd0q7rplj8o1iu5fy2" target="_blank" class="social-icon">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </div>
+                <a href="bookings.html">
+                <button style="margin-top: 25px;" type="button" class="bookNowButton">Book Now</button>
+                </a>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact</h4>
+                <p style="font-size: 15px;">Message me via social media, or drop me an email</p>
+                <p style="font-size: 15px;">
+                    <a href="mailto:gauravojelay@gmail.com" target="_blank" class="social-icon">
+                    <i class="fas fa-envelope"></i> 
+                    </a>
+                    gauravojelay@gmail.com
+                </p>
+            </div>
+            <div class="footer-section about">
+                <h4>About</h4>
+                <p style="font-size: 15px;">Dhol player based in Walsall.</p>
+                <p style="font-size: 15px;">Taking bookings for all occasions!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size: 10px;">&copy; 2024 Gaurav Ojelay. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

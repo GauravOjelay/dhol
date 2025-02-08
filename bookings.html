@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div class="desktop-only">
+        <div class="image-cover image1_8">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="Images/Icon.jpg" alt="Home" class="logo-img">
+                </a>
+                <ul>
+                    <li><a href="index.html"><button type="button" class="header-button">Home</button></a></li>
+                    <li><a href="about.html"><button type="button" class="header-button">About</button></a></li>
+                    <li><a href="contact.html"><button type="button" class="header-button">Contact</button></a></li>
+                    <li><a href="bookings.html"><button type="button" class="header-button">Bookings</button></a></li>
+                    <li><a href="gallery.html"><button type="button" class="header-button">Gallery</button></a></li>
+                    <li><a href="privacyPolicy.html"><button type="button" class="header-button">Privacy</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Book Now</h1>
+        <h2>Ready to Party?</h2>
+        <a href="bookings.html">
+        </a>
+    </div>
+    </div>
+
+
+    <div class="mobile-only">
+        <div class="image-cover image1_8">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="Images/Icon.jpg" class="logo-img">
+                </a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="bookings.html">Bookings</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="privacyPolicy.html">Privacy</a>
+                    </div>
+                </div>
+                  
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        var dropdown = document.getElementById("myDropdown");
+                        dropdown.classList.toggle("show");
+                        document.querySelector(".dropbtn").classList.toggle("active");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                        if (!event.target.closest('.dropdown')) {  // Check if the click is outside the dropdown
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                            // Also remove the active state from the button
+                            document.querySelector(".dropbtn").classList.remove("active");
+                        }
+                    }
+
+                </script>
+            </nav>
+        </header>
+        <h1>Book Now</h1>
+        <h2>Ready to Party?</h2>
+        </div>
+    </div>
+        
+
+
+
+    <div id="booking-section">
+        <style>
+            #booking-section p {
+                text-align: left;
+            }
+            #booking-section ul {
+                list-style-type: disc;
+                display: block;
+                margin-left: 40px;
+                font-size: 25px;
+            }
+            #booking-section a {
+                text-decoration: underline;
+            }
+            #booking-section a:visited {
+                color:white;
+            }
+            #booking-section h2{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        </style>
+    
+        <h2>How to Book</h2>
+    
+        <p>Please message me on any of my social media accounts <a href="contact.html">listed here</a> or email me at gauravojelay@gmail.com. In your message, specify the following:</p>
+        <ul>
+            <li>Your name</li>
+            <li>Date</li>
+            <li>Location</li>
+            <li>Start & end time</li>
+            <li>The type of occasion (party, wedding etc)</li>
+            <li>Any other important information</li>
+        </ul>
+
+        <h2>Pricing</h2>
+        <p>Many dhol players including myself do not publicly list their prices as they can vary widely, depending on factors like the location and duration.</p>
+        <p>Please message me via my <a href="contact.html">social media</a> for a quote.</p>
+
+        <p>Here's what you're paying for:</p>
+        <ul>
+            <li>Skill and experience - I've invested years in mastering my craft. You're paying for my technical proficiency and my ability to play at a high standard for as long as you need.</li>
+            <li>Performance - I offer the energy and entertainment value that you'd expect a professional dhol player to provide to make your day special and memorable.</li>
+            <li>Off-stage work - In order to keep delivering a service of high standards, countless hours must go into practice and maintaining the dhol (for example, replacing worn skins, purchasing new sticks)</li>
+        </ul>
+        <p>No matter the function, I can assure you that my performance will add great value to your event!</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h4>Find Me On</h4>
+                <div>
+                    <a href="https://www.instagram.com/gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/gauravojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gaurav-ojelay" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/y35he0wxd0q7rplj8o1iu5fy2" target="_blank" class="social-icon">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </div>
+                <a href="bookings.html">
+                <button style="margin-top: 25px;" type="button" class="bookNowButton">Book Now</button>
+                </a>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact</h4>
+                <p style="font-size: 15px;">Message me via social media, or drop me an email</p>
+                <p style="font-size: 15px;">
+                    <a href="mailto:gauravojelay@gmail.com" target="_blank" class="social-icon">
+                    <i class="fas fa-envelope"></i> 
+                    </a>
+                    gauravojelay@gmail.com
+                </p>
+            </div>
+            <div class="footer-section about">
+                <h4>About</h4>
+                <p style="font-size: 15px;">Dhol player based in Walsall.</p>
+                <p style="font-size: 15px;">Taking bookings for all occasions!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size: 10px;">&copy; 2024 Gaurav Ojelay. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
