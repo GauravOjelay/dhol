@@ -139,10 +139,6 @@ p{
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block; /* Align with other elements */
     cursor: pointer; /* Pointer cursor on hover */
-}
-
-
-.bookNowButton {
     border: 2px solid white; /* White border */
     padding: 10px 20px; /* Padding inside the button */
     text-align: center; /* Center text */
@@ -411,6 +407,10 @@ footer {
     text-align: center;
 }
 
+footer .bookNowButton{
+    margin-top: 25px;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-around;
@@ -571,10 +571,18 @@ footer {
         flex: none; /* Prevent the footer sections from expanding */
     }
 
+    footer .bookNowButton{
+        font-size: 4.5px;
+        border: 1px solid white; /* White border */
+        padding: 4px 8px; /* Padding inside the button */
+        text-align: center; /* Center text */
+        margin-top: 0px;
+
+    }
 
     .social-icon {
-        font-size: 8px;
-        margin: 0 2px;
+        font-size: 10px;
+        margin: 0 1.4px;
         display: inline-block; /* Align icons horizontally */
     }
 }
