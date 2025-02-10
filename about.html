@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.pathname.endsWith(".html")) {
+            let newPath = window.location.pathname.replace(".html", "");
+            window.history.replaceState(null, "", newPath);
+        }
+    });
+</script>
 
 <body>
     <div class="desktop-only">

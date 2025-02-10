@@ -154,6 +154,7 @@ p{
     border: none;
     padding: 25px 35px;
     font-size: 25px;
+    margin-bottom: 0;
 }
 
 .header-button:hover {
