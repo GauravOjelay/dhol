@@ -472,7 +472,6 @@ footer {
 
 
 
-
 @media (max-width: 1000px) {
 
     .mobile-only {
@@ -514,6 +513,18 @@ footer {
     }
 
 
+    footer h4{
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+
+    footer p {
+        font-size: 4.5px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+
 
     .image-cover.home-page-grid.image2_1{
         background-image: url("Images/Photo2.1.jpg");
@@ -534,23 +545,8 @@ footer {
         width: 600px;
     }   
 
-
-
-
-
     .logo-img{
         height: 50px;
-    }
-
-
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
     }
 
     .pic-grid-1x3 {
@@ -561,8 +557,28 @@ footer {
     .pic-grid-1x3 div {
         margin-bottom: 10px; /* Space between items */
     }
+
+
+    .footer-content {
+        display: flex; 
+        flex-direction: row; /* Make the footer content horizontal */
+        justify-content: space-around; /* Space items evenly */
+        align-items: center; /* Center items vertically */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .footer-section {
+        flex: none; /* Prevent the footer sections from expanding */
+    }
+
+
+    .social-icon {
+        font-size: 8px;
+        margin: 0 2px;
+        display: inline-block; /* Align icons horizontally */
+    }
 }
-    
+
 @media (min-width: 1000px) {
 
     .mobile-only {
